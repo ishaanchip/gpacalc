@@ -1,0 +1,209 @@
+
+<html lang="en">
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GPA CALCULATOR</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Song+Myung&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap" rel="stylesheet">
+<link href="index.css" rel="stylesheet" /> 
+</head>
+<body>
+  
+</body>
+</html>
+<body>
+  
+  <div class="top">
+  <header>
+    <h1>GPA CALCULATOR</h1>
+    <nav class="navi ">
+      <ul>
+        <a>FAQ</a>
+        <a>LCPS Grading Policy</a>
+        <a>About Us</a>
+      </ul>
+    </nav>
+    <div class="gpa-icon " id="main-user-icon-div">
+    <i class="fa-solid fa-user" ></i>
+    </div>
+  </header>
+  </div>
+  <main>
+    <div id="full-log-screen">
+    <div class="log-options" id="log-options">
+      <div class="sign-up" id="sign-up-btn">
+        <i class="fa-solid fa-user-pen"></i>
+        <h1>Sign Up</h1>
+      </div>
+      <div class="log-in" id="log-in-btn">
+        <i class="fa-solid fa-user-check"></i>
+        <h1>Log In</h1>
+      </div>
+      <div class="guest" id="guest-btn">
+        <i class="fa-solid fa-user"></i>
+        <h1>Guest Log In</h1>
+      </div>
+      
+      
+      
+    </div>
+    <div class="log-methods">
+      <div class="sign-in-screen hide" id="sign-screen">
+        <h1>Sign Up: </h1>
+        <div>
+          <h4>Student ID </h4>
+        <input id="sign-in-id"/>
+        </div>
+        <div>
+          <h4>Create Password </h4>
+        <input id="sign-in-password"/>
+        </div>
+        <div>
+          <h4>Full Name </h4>
+        <input id="sign-in-full-name"/>
+        </div>
+        <div>
+          <h4>Current Grade Level </h4>
+        <select id="sign-in-year">
+          <option value=""></option>
+          <option value="12th">12th</option>
+          <option value="11th">11th</option>
+          <option value="10th">10th</option>
+          <option value="9th">9th</option>
+        </select>
+        </div>
+        <p class="warning" id="sign-in-warning"></p>
+        <button class="btn btn-block"id="create-sign-in-btn">Create Account</button>
+        
+        
+        
+      </div>
+      
+      
+      
+       <div class="log-in-screen hide" id="log-screen">
+        <h1>Log In: </h1>
+        <div>
+          <h4>Enter Student ID </h4>
+        <input id="log-in-id"/>
+        </div>
+        <div>
+          <h4>Enter Password: </h4>
+        <input id="log-in-password"/>
+        </div>
+        
+        <p class="warning" id="log-in-warning"></p>
+        <button class="btn btn-block"id="enter-log-in-btn">Log In</button>
+        
+        
+        
+      </div>
+      
+      
+      
+      
+    </div>
+    
+    </div>
+    
+    
+    <div class="GPA hide" id="gpa-screen">
+    <div class="add-course-box hide" id="add-course-box">
+      <span> <i class="fa-solid fa-circle-xmark" id="add-course-x"></i></span>
+       <h1 class="add-title">Course Description</h1>
+      
+        <div class="course-add">
+          <div class="course-title">
+            <div class="course-search">
+              <div class="top-search">
+            <input required type="text" id="input-course"/>
+                <i class="fa-solid fa-magnifying-glass search-course"id="search-course"></i>
+              </div>
+            <div class="search-result hide" id="course-selection">
+              
+            </div>
+            </div>  
+            <p class="output-course" id="output-course">Course Title: </p>
+          </div>
+          <div class="course-grade">
+            <p>Final Grade (Letter Grade)</p>
+            <select id="grade">
+              <option></option>
+              <option value="a+">A+</option>
+              <option value="a">A</option>
+              <option  value="a-">A-</option>
+              <option value="b+">B+</option>
+              <option value="b">B</option>
+              <option  value="b-">B-</option>
+              <option value="c+">C+</option>
+              <option value="c">C</option>
+              <option  value="c-">C-</option>
+              <option value="d+">D+</option>
+              <option value="d">D</option>
+              <option  value="d-">D-</option>
+              <option value="f">F</option>
+              
+            </select>
+            
+          </div>
+          <div class="course-type">
+            <p id="type-phrase">Course Type</p>
+            <select id="course-type">
+              <option></option>
+              <option value="ap/de">AP/DE</option>
+              <option value="h">H</option>
+              <option  value="a">A</option>
+            </select>
+          </div>
+          
+        </div>
+      <i class="fa-solid fa-check confirm"  id="check-add"></i>
+      
+    </div>
+    
+    
+    
+    <div class="class-box">
+      <div class="class">
+      <h1>Course History</h1>
+      <div class="courses" id="courses">
+        
+        
+        
+        
+        
+      </div>
+      </div>
+      <div class="addObj" id="add-course">
+         <i class="fa-solid fa-circle-plus " ></i>
+      </div>
+      
+      
+    </div>
+    
+    <div class="gpa-box">
+      <h3 id="weighted">Weighted GPA: N/A</h3>
+      <h3 id="unweighted">Unweighted GPA: N/A</h3>
+      
+    </div>
+    </div>
+    
+    
+    
+    
+    
+    
+  </main>
+  <script src="index.js"></script>
+</body>
+
+
+
+
+
+
+

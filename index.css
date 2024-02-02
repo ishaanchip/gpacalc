@@ -1,0 +1,350 @@
+*{
+  margin:0; 
+  padding:0;
+}
+body{
+  background-color:rgba(65,77,79,255);
+  
+}
+.top{
+background-color:rgba(85,155,154,1);
+}
+header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding-top:2%;
+  padding-bottom:1.5%;
+  font-size:1rem;
+  color:white;
+  font-family:'noto serif',sans-serif;
+  padding-left:50px;
+  padding-right:50px;
+  border-bottom:0.3rem solid white;
+  
+}
+header h1{
+font-size:2rem;
+}
+ul{
+display:flex;
+}
+ul a{
+display:inline-block;
+padding: 0 30px;
+transition:0.4s;
+font-size:2.5vh;
+}
+ul a:hover{
+text-shadow:4px 4px 0px black;
+transform:translateY(-7px);
+transform:translateX(-7px);
+cursor:pointer;
+transition:0.4s;
+}
+header i{
+font-size:1.5rem;
+color:black;
+transition:0.4s;
+}
+header i:hover{
+font-size:2rem;
+color:white;
+transition:0.4s;
+cursor:pointer;
+
+}
+.log-options{
+  display:flex;
+  justify-content:space-between;
+  padding-left:10%;
+  padding-right:10%;
+  margin-top:10%;
+}
+.log-options i{
+  margin-top:30%;
+  font-size:6vh;
+}
+.log-options h1{
+  margin-top:20%;
+  font-family:'Song Myung',sans-serif;
+}
+.sign-up,.log-in,.guest{
+  width:20rem;
+  height:20rem;
+  background-color:whitesmoke;
+  border-radius:10%;
+  text-align:center;
+  transition:0.4s;
+  border:0.2rem solid black
+}
+.sign-up:hover{
+  cursor:pointer;
+  transform:translateY(-5px);
+  box-shadow:10px 10px 2px rgba(85,155,154,1);
+}
+.log-in:hover{
+  cursor:pointer;
+  transform:translateY(-5px);
+  box-shadow:10px 10px 2px rgba(85,155,154,1);
+}
+.guest:hover{
+  cursor:pointer;
+  transform:translateY(-5px);
+  box-shadow:10px 10px 2px rgba(85,155,154,1);
+}
+
+.sign-in-screen,.log-in-screen {
+   width:25rem;
+  height:25rem;
+  background-color:whitesmoke;
+  border-radius:10%;
+  text-align:center;
+  margin:0 auto;
+  margin-top:5%;
+  padding:2%;
+  transition:0.4s;
+  border:0.2rem solid black;
+  position:relative;
+} 
+.sign-in-screen div, .log-in-screen div{
+  margin-top:5%;
+  margin-bottom:5%;  
+  font-family:'noto serif',sans-serif;
+}
+.sign-in-screen input, .log-in-screen input{
+  text-align:center;
+  font-family:'noto serif',sans-serif;
+}
+.sign-in-screen p, .log-in-screen p{
+  color:red;
+  font-family:'noto serif',sans-serif;
+  font-size:4vh;
+  margin-top:2%;
+  margin-bottom:2%;
+}
+.sign-in-screen button, .log-in-screen button{
+  font-size:3vh;
+  font-family:'noto serif',sans-serif;
+}
+.sign-in-screen button:hover{
+  cursor:pointer;
+}
+
+.log-in-screen button:hover{
+  cursor:pointer;
+}
+
+
+
+.GPA{
+  display:flex;
+  justify-content:space-between;
+  margin-top:2%;
+  padding-left:12%;
+  padding-right:12%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.add-course-box{
+  text-align:center;
+  background-color:whitesmoke;
+  width:30rem;
+  height:30rem;
+  border-radius:5%;
+  font-size:3vh;
+  position:relative;
+  padding-top:5%;
+  font-family: 'Cabin', sans-serif;
+  margin-right:5%;
+}
+
+.add-course-box span{
+  position:absolute;
+  right:3%;
+  bottom:90%;
+  transition:0.4s;
+  font-size:3.5vh;
+}
+
+.add-course-box span:hover{
+  color:red;
+  cursor:pointer;
+  transition:0.4s;
+}
+.add-title{
+  font-size:5vh;
+  margin-bottom:5%;
+   font-family:'Song Myung',sans-serif;
+}
+.course-title input{
+  border-radius:10%;
+  outline:none;
+  text-decoration:none;
+  text-align:center;
+  width:15rem;
+}
+select{
+  font-family: 'Cabin', sans-serif;
+  margin-left:5%;
+}
+.search-course{
+  transition:0.4s;
+}
+.search-course:hover{
+  color:blue;
+  cursor:pointer;
+  transition:0.4s;
+  font-size:4vh;
+}
+.search-result{
+  width:10rem;
+  height:5rem;
+  background-color:white;
+  margin:0 auto;
+  border-radius:2%;
+  overflow:scroll;
+  font-size:2vh;
+  
+  
+}
+.search-result p{
+  font-family:1.5vh;
+}
+.search-result p:hover{
+  background-color:gold;
+  cursor:pointer;
+}
+.output-course{
+  text-align:left;
+  padding-left:5%;
+  padding-top:5%;
+}
+
+.course-grade{
+  display:flex;
+  padding-left:5%;
+  margin-top:5%;
+}
+.course-grade input{
+  font-size:3vh;
+  width:5rem;
+  text-align:center;
+}
+.confirm{
+  margin-top:3%;
+  padding-bottom:5%;
+  font-size:5.5vh;
+  transition:0.4s;
+}
+.confirm:hover{
+  transition:0.4s;
+  cursor:pointer;
+  color:lightgreen;
+}
+
+.course-type{
+  display:flex;
+  padding-left:5%;
+  margin-top:10%;
+}
+
+
+
+
+.class-box{
+  text-align:center;
+  background-color:whitesmoke;
+  width:20rem;
+  height:25rem;
+  border-radius:2%;
+  position:relative;
+  padding:4%;
+  border:1rem solid black;
+  overflow:scroll;
+  font-family: 'Cabin', sans-serif;
+}
+
+.class-box h1{
+  font-size:4.2vh;
+  padding-bottom:10%;
+  font-family:'Song Myung',sans-serif;
+  text-align:left;
+  padding-left:1%;
+  
+}
+
+.addObj i{
+  position:absolute;
+  bottom:88%;
+  font-size:3.5vh;
+  right:3%;
+  transition:0.4s;
+  
+}
+.addObj i:hover{
+  cursor:pointer;
+  color:lightgreen;
+  transition:0.4s;
+}
+.course{
+  display:flex;
+  justify-content:space-between;
+  padding-left:2%;
+  padding-right:2%;
+  padding-bottom:3%;
+  margin-bottom:2%;
+  border-bottom:1px solid black;
+  align-items:center;
+}
+.history-title{
+  width:40%;
+}
+.history-grade{
+  width:10%;
+}
+.history-type{
+  width:5%;
+}
+.x{
+  transition:0.4s;
+}
+.x:hover{
+  color:red;
+  transition:0.4s;
+  cursor:pointer;
+}
+
+
+.gpa-box{
+  text-align:center;
+  background-color:whitesmoke;
+  width:20rem;
+  height:18rem;
+  border-radius:5%;
+  margin-top:5%;
+  font-size:4.2vh;
+  padding:3%;
+  font-family: 'Roboto Slab', serif;
+  margin-left:1%;
+}
+
+
+
+.hide{
+  display:none;
+}
